@@ -55,7 +55,7 @@ contract LinkToken is ERC20 {
         uint256 _value,
         bytes memory _data
     ) private {
-        ERC677Receiver receiver = ERC677Receiver(_to);
+        ERC677Receiver receiver = ERC677Receiver(_to);//677 is extend of erc20
         receiver.onTokenTransfer(msg.sender, _value, _data);
     }
 

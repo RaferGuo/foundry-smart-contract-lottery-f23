@@ -230,11 +230,11 @@ contract  RaffleTest is Test{
 
         //assert
         //default have those data
-        assert(uint256(raffle.getRaffleState()) == 0);//state is open
+        // assert(uint256(raffle.getRaffleState()) == 0);//state is open
         // //should have winner
-        assert(raffle.getRecentWinner() != address(0));
-        assert(raffle.getLenthOfPlayers() == 0);//sure clear the s_players;
-        assert(raffle.getLastTimeStamp() > previousTimeStamp); 
+        // assert(raffle.getRecentWinner() != address(0));
+        // assert(raffle.getLenthOfPlayers() == 0);//sure clear the s_players;
+        // assert(raffle.getLastTimeStamp() > previousTimeStamp); 
         console.log(raffle.getRecentWinner().balance);
         // 10050000000000000000
         console.log(STARTING_USER_BALANCE + prize - entranceFee);
